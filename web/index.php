@@ -62,5 +62,5 @@ $app->get('/db/', function() use($app) {
     'names' => $names
   ));
 })
-echo "Hello World"
 $app->run();
+<?php echo "Hello World!<p>"; ?>
