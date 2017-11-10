@@ -2,7 +2,6 @@
 
 <?php
 
-
 require('../vendor/autoload.php');
 
 $app = new Silex\Application();
@@ -65,11 +64,3 @@ $app->get('/db/', function() use($app) {
 })
 
 $app->run();
-<html>
- <head>
-  <title>Test PHP</title>
- </head>
- <body>
- <?php echo "Hello World!<p>"; ?>
- </body>
-</html> 
