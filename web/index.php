@@ -63,4 +63,13 @@ $app->get('/db/', function() use($app) {
   ));
 });
 
+<html>
+ <head>
+  <title>Test PHP</title>
+ </head>
+ <body>
+ <?php echo "Hello World!<p>"; ?>
+ </body>
+</html> 
+
 $app->run();
