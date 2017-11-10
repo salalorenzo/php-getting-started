@@ -2,6 +2,7 @@
 
 <?php
 
+
 require('../vendor/autoload.php');
 
 $app = new Silex\Application();
@@ -61,8 +62,9 @@ $app->get('/db/', function() use($app) {
   return $app['twig']->render('database.twig', array(
     'names' => $names
   ));
-});
+})
 
+$app->run();
 <html>
  <head>
   <title>Test PHP</title>
@@ -71,5 +73,3 @@ $app->get('/db/', function() use($app) {
  <?php echo "Hello World!<p>"; ?>
  </body>
 </html> 
-
-$app->run();
