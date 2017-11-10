@@ -1,7 +1,7 @@
 
 
 <?php
-
+echo "Hello World!"
 
 require('../vendor/autoload.php');
 
