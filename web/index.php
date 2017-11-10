@@ -1,7 +1,6 @@
 
 
 <?php
-echo "Hello World!"
 
 require('../vendor/autoload.php');
 
@@ -63,5 +62,5 @@ $app->get('/db/', function() use($app) {
     'names' => $names
   ));
 })
-
+echo "Hello World"
 $app->run();
