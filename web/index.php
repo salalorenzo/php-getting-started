@@ -1,16 +1,18 @@
 <?php
-    setcookie('count', isset($_COOKIE['count']) ? $_COOKIE['count']++ : 1);
-    $visitCount = $_COOKIE['count'];
+    setcookie('c', isset($_COOKIE['c']) ? $_COOKIE['c']++ : 1);
+    $contaVisite = $_COOKIE['c'];
 ?>
+
+
 <html> 
     <head> 
-        <title>Count Page Access</title> 
+        <title>Contatore accessi alla pagina</title> 
     </head> 
     <body> 
-        <?if ($visitCount == 1): ?>
-            Welcome! This is the first time you have viewed this page. 
+        <?if ($contaVisite == 1): ?>
+            E' la prima volta!
         <?else:?> 
-            You have viewed this page <?= $_COOKIE['count'] ?> times. 
+            Totale visite: <?= $_COOKIE['c'] ?> times. 
         <?endif;?>
     </body> 
 </html>
