@@ -1,13 +1,6 @@
-<?php
-    setcookie('c', isset($_COOKIE['c']) ? $_COOKIE['c']++ : 1);
-    $contaVisite = $_COOKIE['c'];
+$nome="MyCookie";
+setcookie($nome, $value, time()+3600*24);
 
-    if ($contaVisite == 1): 
-        E' la prima volta!
-    else:
-        Totale visite: <?= $_COOKIE['c'] ?> times. 
-    endif;
-?>
 
 
 <html> 
@@ -15,6 +8,5 @@
         <title>Contatore accessi alla pagina</title> 
     </head> 
     <body> 
-
     </body> 
 </html>
